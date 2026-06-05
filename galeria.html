@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería — SPA Laser Manacor · Centro de Estética & Láser</title>
+  <meta name="description" content="Descubre el espacio, la tecnología y los tratamientos de SPA Laser Manacor a través de nuestra galería de fotos reales: instalaciones, cabinas, tratamientos faciales, corporales y láser en Manacor.">
+  <meta property="og:title" content="Galería — SPA Laser Manacor">
+  <meta property="og:description" content="Conoce nuestro espacio y tratamientos en imágenes reales. Centro de estética y láser en Manacor.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/emblem-gold.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+  <!-- ============================ HEADER ============================ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo" aria-label="SPA Laser Manacor — Inicio">
+        <img src="assets/logo/logo-gold.svg" alt="SPA Laser Manacor" width="200" height="68">
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Inicio</a></li>
+          <li><a href="servicios.html" class="nav__link">Servicios</a></li>
+          <li><a href="sobre.html" class="nav__link">Sobre</a></li>
+          <li><a href="galeria.html" class="nav__link is-active">Galería</a></li>
+          <li><a href="contacto.html" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header__cta">
+        <a href="https://booksy.com/es-es/38911_centro-de-estetica-laser_cuidado-de-la-piel_68645_manacor" target="_blank" rel="noopener noreferrer" class="btn btn--gold">Reservar cita</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__head">
+      <a href="index.html" aria-label="SPA Laser Manacor — Inicio"><img src="assets/logo/logo-gold.svg" alt="SPA Laser Manacor" class="mobile-menu__logo"></a>
+      <button class="mobile-menu__close" id="navClose" aria-label="Cerrar menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <nav class="mobile-menu__nav" aria-label="Navegación móvil">
+      <a href="index.html">Inicio <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="servicios.html">Servicios <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="sobre.html">Sobre <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="galeria.html" class="is-active">Galería <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="contacto.html">Contacto <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </nav>
+    <div class="mobile-menu__foot">
+      <a href="https://booksy.com/es-es/38911_centro-de-estetica-laser_cuidado-de-la-piel_68645_manacor" target="_blank" rel="noopener noreferrer" class="btn btn--gold">Reservar cita</a>
+      <div class="mobile-menu__contacts">
+        <a href="https://wa.me/34644117081" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.01c-.24.68-1.2 1.26-1.97 1.42-.52.11-1.2.2-3.5-.75-2.94-1.22-4.83-4.2-4.98-4.39-.14-.2-1.19-1.58-1.19-3.01s.75-2.13 1.02-2.42c.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.59.82 2.03.89 2.18.07.14.12.31.02.51-.34.69-.7.66-.43 1.13.86 1.48 1.86 1.97 2.3 2.16.32.14.5.12.69-.07.19-.2.79-.92.99-1.24.2-.32.41-.27.68-.16.27.1 1.71.81 2 .96.29.14.49.22.56.34.07.12.07.71-.17 1.39z"/></svg></a>
+        <a href="tel:+34644117081" aria-label="Llamar por teléfono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2.1z"/></svg></a>
+        <a href="https://instagram.com/spalasermanacor" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+      </div>
+      <p class="mobile-menu__addr"><a href="https://maps.google.com/?q=Avinguda+d'Es+Torrent+7c+Manacor" target="_blank" rel="noopener noreferrer">Avinguda d'Es Torrent, 7c · 07500 Manacor</a></p>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ====================== PAGE-HERO ====================== -->
+    <section class="hero hero--sub" aria-label="Galería">
+      <div class="hero__media">
+        <img src="assets/images/recepcion.webp" alt="Recepción y espacio interior de SPA Laser Manacor" width="900" height="780">
+      </div>
+      <span class="hero__crown" aria-hidden="true">
+        <img src="assets/logo/emblem-gold.svg" alt="">
+      </span>
+      <div class="container">
+        <div class="hero__content">
+          <span class="eyebrow hero__eyebrow" data-animate>Galería</span>
+          <h1 class="hero__title" data-animate data-animate-delay="1">Descubre nuestro<br>espacio y tratamientos</h1>
+          <p class="hero__text" data-animate data-animate-delay="2">Conoce nuestras instalaciones, la tecnología y los tratamientos que realzan tu belleza.</p>
+          <div class="hero__rating" data-animate data-animate-delay="3">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3L22 9.2l-5 4.7 1.3 6.9L12 17.6 5.7 20.8 7 13.9 2 9.2l7.1-.9z"/></svg>
+            <span class="num">5,0</span>
+            <span class="rev">· 93 reseñas en Booksy</span>
+          </div>
+          <div class="hero__actions" data-animate data-animate-delay="4">
+            <a href="https://booksy.com/es-es/38911_centro-de-estetica-laser_cuidado-de-la-piel_68645_manacor" target="_blank" rel="noopener noreferrer" class="btn btn--gold">Reservar cita</a>
+            <a href="https://wa.me/34644117081" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">
+              <span class="btn__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.01c-.24.68-1.2 1.26-1.97 1.42-.52.11-1.2.2-3.5-.75-2.94-1.22-4.83-4.2-4.98-4.39-.14-.2-1.19-1.58-1.19-3.01s.75-2.13 1.02-2.42c.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.59.82 2.03.89 2.18.07.14.12.31.02.51-.34.69-.7.66-.43 1.13.86 1.48 1.86 1.97 2.3 2.16.32.14.5.12.69-.07.19-.2.79-.92.99-1.24.2-.32.41-.27.68-.16.27.1 1.71.81 2 .96.29.14.49.22.56.34.07.12.07.71-.17 1.39z"/></svg></span>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== FILTROS ====================== -->
+    <section class="filters filters--gal" aria-label="Filtrar galería">
+      <div class="container filters__row" role="tablist">
+        <button class="filter-tab is-active" data-cat="todos" role="tab">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+          Todo
+        </button>
+        <button class="filter-tab" data-cat="centro" role="tab">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-6h6v6"/></svg>
+          Centro
+        </button>
+        <button class="filter-tab" data-cat="facial" role="tab">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9 10h.01M15 10h.01M9 15c1.8 1.3 4.2 1.3 6 0"/></svg>
+          Tratamientos faciales
+        </button>
+        <button class="filter-tab" data-cat="corporal" role="tab">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="4.5" r="2"/><path d="M12 7v8M7 10l5-2 5 2M9 21l3-6 3 6"/></svg>
+          Corporales
+        </button>
+        <button class="filter-tab" data-cat="laser" role="tab">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 2v5M12 17v5M2 12h5M17 12h5M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"/><circle cx="12" cy="12" r="2.5"/></svg>
+          Láser
+        </button>
+        <button class="filter-tab" data-cat="masajes" role="tab">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 14c2-3 5-4.5 8-4.5s6 1.5 8 4.5"/><path d="M4 14v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/><path d="M12 9.5V6"/></svg>
+          Masajes
+        </button>
+        <button class="filter-tab" data-cat="detalle" role="tab">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3l2.3 5.3L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.7-.7z"/></svg>
+          Detalle
+        </button>
+        <span class="filters__count"><strong id="filterCount">15</strong> imágenes</span>
+      </div>
+    </section>
+
+    <!-- ====================== GALERÍA ====================== -->
+    <section class="section galeria" aria-label="Galería de fotos">
+      <div class="container">
+        <div class="gal-grid" id="galGrid">
+
+          <!-- CENTRO -->
+          <button type="button" class="gal-tile" data-cat="centro" data-full="assets/images/recepcion.webp" data-cap-cat="El centro" data-cap-title="Recepción & bienvenida" data-animate aria-label="Ampliar: Recepción y bienvenida">
+            <img src="assets/images/recepcion.webp" alt="Recepción de SPA Laser Manacor" loading="lazy">
+            <span class="gal-tile__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span>
+            <span class="gal-tile__cap" aria-hidden="true"><span>El centro</span><strong>Recepción & bienvenida</strong></span>
+          </button>
+
+          <button type="button" class="gal-tile" data-cat="centro" data-full="assets/images/espacio-cabina.webp" data-cap-cat="El centro" data-cap-title="Cabina de tratamiento" data-animate aria-label="Ampliar: Cabina de tratamiento">
+            <img src="assets/images/espacio-cabina.webp" alt="Cabina de tratamiento de SPA Laser Manacor" loading="lazy">
+            <span class="gal-tile__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span>
+            <span class="gal-tile__cap" aria-hidden="true"><span>El centro</span><strong>Cabina de tratamiento</strong></span>
+          </button>
+
+          <button type="button" class="gal-tile" data-cat="centro" data-full="assets/images/team-1.webp" data-cap-cat="El centro" data-cap-title="Nuestro equipo" data-animate aria-label="Ampliar: Nuestro equipo">
+            <img src="assets/images/team-1.webp" alt="Especialista del equipo de SPA Laser Manacor" loading="lazy">
+            <span class="gal-tile__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span>
+            <span class="gal-tile__cap" aria-hidden="true"><span>El centro</span><strong>Nuestro equipo</strong></span>
+          </button>
+
+          <!-- FACIAL -->
+          <button type="button" class="gal-tile" data-cat="facial" data-full="assets/images/limpieza-facial.webp" data-cap-cat="Facial" data-cap-title="Limpieza facial profunda" data-animate aria-label="Ampliar: Limpieza facial profunda">
+            <img src="assets/images/limpieza-facial.webp" alt="Limpieza facial profunda" loading="lazy" style="object-position:center top">
+            <span class="gal-tile__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span>
+            <span class="gal-tile__cap" aria-hidden="true"><span>Facial</span><strong>Limpieza facial profunda</strong></span>
+          </button>
+
+          <button type="button" class="gal-tile" data-cat="facial" data-full="assets/images/dermapen-cejas.webp" data-cap-cat="Facial" data-cap-title="Dermapen + exosomas" data-animate aria-label="Ampliar: Dermapen con exosomas">
+            <img src="assets/images/dermapen-cejas.webp" alt="Tratamiento dermapen con exosomas" loading="lazy">
+            <span class="gal-tile__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span>
+            <span class="gal-tile__cap" aria-hidden="true"><span>Facial</span><strong>Dermapen + exosomas</strong></span>
+          </button>
+
+          <button type="button" class="gal-tile" data-cat="facial" data-full="assets/images/bellaction.webp" data-cap-cat="Facial" data-cap-title="Radiofrecuencia facial" data-animate aria-label="Ampliar: Radiofrecuencia facial">
+            <img src="assets/images/bellaction.webp" alt="Radiofrecuencia facial reafirmante" loading="lazy" style="object-position:center top">
+            <span class="gal-tile__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span>
+            <span class="gal-tile__cap" aria-hidden="true"><span>Facial</span><strong>Radiofrecuencia facial</strong></span>
+          </button>
+
+          <!-- CORPORAL -->
+          <button type="button" class="gal-tile" data-cat="corporal" data-full="assets/images/maderoterapia.webp" data-cap-cat="Corporal" data-cap-title="Maderoterapia" data-animate aria-label="Ampliar: Maderoterapia">
+            <img src="assets/images/maderoterapia.webp" alt="Sesión de maderoterapia" loading="lazy" style="object-position:center top">
+            <span class="gal-tile__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span>
+            <span class="gal-tile__cap" aria-hidden="true"><span>Corporal</span><strong>Maderoterapia</strong></span>
+          </button>
+
+          <button type="button" class="gal-tile" data-cat="corporal" data-full="assets/images/presoterapia.webp" data-cap-cat="Corporal" data-cap-title="Presoterapia" data-animate aria-label="Ampliar: Presoterapia">
+            <img src="assets/images/presoterapia.webp" alt="Sesión de presoterapia" loading="lazy" style="object-position:center bottom">
+            <span class="gal-tile__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span>
+            <span class="gal-tile__cap" aria-hidden="true"><span>Corporal</span><strong>Presoterapia</strong></span>
+          </button>
+
+          <button type="button" class="gal-tile" data-cat="corporal" data-full="assets/images/hero-tratamiento.webp" data-cap-cat="Corporal" data-cap-title="Tratamiento corporal" data-animate aria-label="Ampliar: Tratamiento corporal">
+            <img src="assets/images/hero-tratamiento.webp" alt="Esteticista realizando un tratamiento corporal" loading="lazy" style="object-position:center">
+            <span class="gal-tile__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span>
+            <span class="gal-tile__cap" aria-hidden="true"><span>Corporal</span><strong>Tratamiento corporal</strong></span>
+          </button>
+
+          <!-- LÁSER -->
+          <button type="button" class="gal-tile" data-cat="laser" data-full="assets/images/depilacion-laser.webp" data-cap-cat="Láser" data-cap-title="Depilación láser" data-animate aria-label="Ampliar: Depilación láser">
+            <img src="assets/images/depilacion-laser.webp" alt="Sesión de depilación láser" loading="lazy">
+            <span class="gal-tile__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span>
+            <span class="gal-tile__cap" aria-hidden="true"><span>Láser</span><strong>Depilación láser</strong></span>
+          </button>
+
+          <button type="button" class="gal-tile" data-cat="laser" data-full="assets/images/despigmentacion.webp" data-cap-cat="Láser" data-cap-title="Despigmentación" data-animate aria-label="Ampliar: Despigmentación con láser">
+            <img src="assets/images/despigmentacion.webp" alt="Tratamiento de despigmentación con láser" loading="lazy" style="object-position:center top">
+            <span class="gal-tile__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span>
+            <span class="gal-tile__cap" aria-hidden="true"><span>Láser</span><strong>Despigmentación</strong></span>
+          </button>
+
+          <!-- MASAJES -->
+          <button type="button" class="gal-tile" data-cat="masajes" data-full="assets/images/masaje.webp" data-cap-cat="Masajes" data-cap-title="Masaje relajante" data-animate aria-label="Ampliar: Masaje relajante">
+            <img src="assets/images/masaje.webp" alt="Masaje relajante" loading="lazy">
+            <span class="gal-tile__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span>
+            <span class="gal-tile__cap" aria-hidden="true"><span>Masajes</span><strong>Masaje relajante</strong></span>
+          </button>
+
+          <button type="button" class="gal-tile" data-cat="masajes" data-full="assets/images/masaje.webp" data-cap-cat="Masajes" data-cap-title="Masaje descontracturante" data-animate aria-label="Ampliar: Masaje descontracturante">
+            <img src="assets/images/masaje.webp" alt="Masaje descontracturante" loading="lazy" style="object-position:center bottom">
+            <span class="gal-tile__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span>
+            <span class="gal-tile__cap" aria-hidden="true"><span>Masajes</span><strong>Masaje descontracturante</strong></span>
+          </button>
+
+          <!-- DETALLE -->
+          <button type="button" class="gal-tile" data-cat="detalle" data-full="assets/images/team-2.webp" data-cap-cat="Detalle" data-cap-title="Atención personalizada" data-animate aria-label="Ampliar: Atención personalizada">
+            <img src="assets/images/team-2.webp" alt="Atención personalizada a una clienta" loading="lazy" style="object-position:center top">
+            <span class="gal-tile__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span>
+            <span class="gal-tile__cap" aria-hidden="true"><span>Detalle</span><strong>Atención personalizada</strong></span>
+          </button>
+
+          <button type="button" class="gal-tile" data-cat="detalle" data-full="assets/images/team-3.webp" data-cap-cat="Detalle" data-cap-title="Manos expertas" data-animate aria-label="Ampliar: Manos expertas">
+            <img src="assets/images/team-3.webp" alt="Detalle de las manos de una especialista durante un tratamiento" loading="lazy" style="object-position:center">
+            <span class="gal-tile__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span>
+            <span class="gal-tile__cap" aria-hidden="true"><span>Detalle</span><strong>Manos expertas</strong></span>
+          </button>
+
+        </div>
+
+        <p class="gal-empty" id="galEmpty" hidden>No hay imágenes en esta categoría todavía.</p>
+
+        <p class="testimonials__more" style="margin-top:var(--space-lg)" data-animate>
+          <a href="https://instagram.com/spalasermanacor" target="_blank" rel="noopener noreferrer">Ver más en nuestro Instagram →</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ====================== DIFERENCIAIS ====================== -->
+    <section class="features" aria-label="Por qué confiar en nosotros">
+      <div class="container features__grid">
+        <div class="feature" data-animate>
+          <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8a2 2 0 0 1 2-2h2l1.5-2h7L19 6h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/></svg></span>
+          <div><h3>Fotos reales del centro</h3><p>Imágenes auténticas de nuestro espacio y trabajo.</p></div>
+        </div>
+        <div class="feature" data-animate data-animate-delay="1">
+          <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l2.5 6.5L21 9l-5 4.5L17.5 21 12 17l-5.5 4L8 13.5 3 9l6.5-.5z"/></svg></span>
+          <div><h3>Tecnología avanzada</h3><p>Equipos de última generación a tu servicio.</p></div>
+        </div>
+        <div class="feature" data-animate data-animate-delay="2">
+          <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 20A7 7 0 0 1 4 13c0-5 7-10 7-10s7 5 7 10a7 7 0 0 1-7 7Z"/><path d="M11 20v-7"/></svg></span>
+          <div><h3>Ambiente cuidado</h3><p>Un espacio pensado para tu bienestar.</p></div>
+        </div>
+        <div class="feature" data-animate data-animate-delay="3">
+          <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/></svg></span>
+          <div><h3>Tratamientos personalizados</h3><p>Protocolos adaptados a cada persona.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== CTA ====================== -->
+    <section class="section cta" aria-label="Reserva tu cita">
+      <div class="container">
+        <div class="cta-card" data-animate="fade">
+          <span class="cta-card__crown" aria-hidden="true"><img src="assets/logo/emblem-gold.svg" alt=""></span>
+          <div class="cta-card__text">
+            <span class="cta-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg></span>
+            <div>
+              <h2>¿Lista para reservar tu cita?</h2>
+              <p>Déjanos cuidar de ti. Tu mejor versión empieza aquí.</p>
+            </div>
+          </div>
+          <div class="cta-card__actions">
+            <a href="https://booksy.com/es-es/38911_centro-de-estetica-laser_cuidado-de-la-piel_68645_manacor" target="_blank" rel="noopener noreferrer" class="btn btn--gold">Reservar cita</a>
+            <a href="https://wa.me/34644117081" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">
+              <span class="btn__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.01c-.24.68-1.2 1.26-1.97 1.42-.52.11-1.2.2-3.5-.75-2.94-1.22-4.83-4.2-4.98-4.39-.14-.2-1.19-1.58-1.19-3.01s.75-2.13 1.02-2.42c.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.59.82 2.03.89 2.18.07.14.12.31.02.51-.34.69-.7.66-.43 1.13.86 1.48 1.86 1.97 2.3 2.16.32.14.5.12.69-.07.19-.2.79-.92.99-1.24.2-.32.41-.27.68-.16.27.1 1.71.81 2 .96.29.14.49.22.56.34.07.12.07.71-.17 1.39z"/></svg></span>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer" aria-label="Pie de página">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/logo/logo-gold.svg" alt="SPA Laser Manacor" width="200" height="68">
+        <p>Centro de estética y láser en Manacor. Tratamientos no invasivos con atención personalizada.</p>
+        <div class="footer__social">
+          <a href="https://instagram.com/spalasermanacor" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="https://www.facebook.com/spalasermanacor/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h2.7l.4-3H13V9.2c0-.9.3-1.5 1.6-1.5H16V5.1c-.3 0-1.2-.1-2.3-.1-2.3 0-3.7 1.4-3.7 3.9V11H7.5v3H10v8z"/></svg></a>
+          <a href="https://wa.me/34644117081" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.01c-.24.68-1.2 1.26-1.97 1.42-.52.11-1.2.2-3.5-.75-2.94-1.22-4.83-4.2-4.98-4.39-.14-.2-1.19-1.58-1.19-3.01s.75-2.13 1.02-2.42c.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.59.82 2.03.89 2.18.07.14.12.31.02.51-.34.69-.7.66-.43 1.13.86 1.48 1.86 1.97 2.3 2.16.32.14.5.12.69-.07.19-.2.79-.92.99-1.24.2-.32.41-.27.68-.16.27.1 1.71.81 2 .96.29.14.49.22.56.34.07.12.07.71-.17 1.39z"/></svg></a>
+        </div>
+      </div>
+      <nav class="footer__col" aria-label="Navegación pie">
+        <h4>Navegación</h4>
+        <ul><li><a href="index.html">Inicio</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="sobre.html">Sobre nosotros</a></li><li><a href="galeria.html">Galería</a></li><li><a href="contacto.html">Contacto</a></li></ul>
+      </nav>
+      <div class="footer__col">
+        <h4>Servicios</h4>
+        <ul><li><a href="servicios.html">Depilación láser</a></li><li><a href="servicios.html">Limpieza facial</a></li><li><a href="servicios.html">Dermapen</a></li><li><a href="servicios.html">Maderoterapia</a></li><li><a href="servicios.html">Bellaction</a></li><li><a href="servicios.html">Presoterapia</a></li></ul>
+      </div>
+      <div class="footer__col">
+        <h4>Horario &amp; Contacto</h4>
+        <ul>
+          <li class="row"><span>Lun – Vie</span><span>09:00 – 20:00</span></li>
+          <li class="row"><span>Sáb &amp; Dom</span><span>Cerrado</span></li>
+          <li style="margin-top:1rem"><a href="https://maps.google.com/?q=Avinguda+d'Es+Torrent+7c+Manacor" target="_blank" rel="noopener noreferrer">Avinguda d'Es Torrent, 7c · Manacor</a></li>
+          <li><a href="tel:+34644117081">+34 644 11 70 81</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year">2026</span> SPA Laser Manacor<span class="sep">·</span>Todos los derechos reservados<span class="sep">·</span>Centro de Estética &amp; Láser, Manacor (Mallorca)</p>
+    </div>
+  </footer>
+
+  <!-- ============================ LIGHTBOX ============================ -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+    <button class="lightbox__close" id="lbClose" aria-label="Cerrar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Imagen anterior">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+    </button>
+    <figure class="lightbox__stage">
+      <img id="lbImg" src="" alt="">
+      <figcaption class="lightbox__cap" id="lbCap"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Imagen siguiente">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+    </button>
+  </div>
+
+  <a href="https://wa.me/34644117081" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Escríbenos por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.01c-.24.68-1.2 1.26-1.97 1.42-.52.11-1.2.2-3.5-.75-2.94-1.22-4.83-4.2-4.98-4.39-.14-.2-1.19-1.58-1.19-3.01s.75-2.13 1.02-2.42c.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.59.82 2.03.89 2.18.07.14.12.31.02.51-.34.69-.7.66-.43 1.13.86 1.48 1.86 1.97 2.3 2.16.32.14.5.12.69-.07.19-.2.79-.92.99-1.24.2-.32.41-.27.68-.16.27.1 1.71.81 2 .96.29.14.49.22.56.34.07.12.07.71-.17 1.39z"/></svg>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

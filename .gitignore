@@ -1,0 +1,14 @@
+# Mockups de design (não fazem parte do site final)
+template*.png
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dependências (caso futuramente use build tools)
+node_modules/
+
+# Logs e temporários
+*.log
+.cache/

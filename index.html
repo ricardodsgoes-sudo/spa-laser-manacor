@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPA Laser Manacor — Centro de Estética & Láser en Manacor</title>
+  <meta name="description" content="Centro de estética y láser en Manacor. Depilación láser, faciales, maderoterapia, presoterapia y más. Tratamientos no invasivos con esteticistas profesionales. ⭐ 5,0 · 93 reseñas. Reserva tu cita.">
+
+  <meta property="og:title" content="SPA Laser Manacor — Centro de Estética & Láser">
+  <meta property="og:description" content="Tu belleza, nuestro arte. Tratamientos faciales y corporales no invasivos en Manacor.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/svg+xml" href="assets/logo/emblem-gold.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+  <!-- ============================ HEADER ============================ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo" aria-label="SPA Laser Manacor — Inicio">
+        <img src="assets/logo/logo-gold.svg" alt="SPA Laser Manacor" width="200" height="68">
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link is-active">Inicio</a></li>
+          <li><a href="servicios.html" class="nav__link">Servicios</a></li>
+          <li><a href="sobre.html" class="nav__link">Sobre</a></li>
+          <li><a href="galeria.html" class="nav__link">Galería</a></li>
+          <li><a href="contacto.html" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header__cta">
+        <a href="https://booksy.com/es-es/38911_centro-de-estetica-laser_cuidado-de-la-piel_68645_manacor" target="_blank" rel="noopener noreferrer" class="btn btn--gold">Reservar cita</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__head">
+      <a href="index.html" aria-label="SPA Laser Manacor — Inicio"><img src="assets/logo/logo-gold.svg" alt="SPA Laser Manacor" class="mobile-menu__logo"></a>
+      <button class="mobile-menu__close" id="navClose" aria-label="Cerrar menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <nav class="mobile-menu__nav" aria-label="Navegación móvil">
+      <a href="index.html" class="is-active">Inicio <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="servicios.html">Servicios <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="sobre.html">Sobre <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="galeria.html">Galería <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="contacto.html">Contacto <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </nav>
+    <div class="mobile-menu__foot">
+      <a href="https://booksy.com/es-es/38911_centro-de-estetica-laser_cuidado-de-la-piel_68645_manacor" target="_blank" rel="noopener noreferrer" class="btn btn--gold">Reservar cita</a>
+      <div class="mobile-menu__contacts">
+        <a href="https://wa.me/34644117081" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.01c-.24.68-1.2 1.26-1.97 1.42-.52.11-1.2.2-3.5-.75-2.94-1.22-4.83-4.2-4.98-4.39-.14-.2-1.19-1.58-1.19-3.01s.75-2.13 1.02-2.42c.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.59.82 2.03.89 2.18.07.14.12.31.02.51-.34.69-.7.66-.43 1.13.86 1.48 1.86 1.97 2.3 2.16.32.14.5.12.69-.07.19-.2.79-.92.99-1.24.2-.32.41-.27.68-.16.27.1 1.71.81 2 .96.29.14.49.22.56.34.07.12.07.71-.17 1.39z"/></svg></a>
+        <a href="tel:+34644117081" aria-label="Llamar por teléfono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2.1z"/></svg></a>
+        <a href="https://instagram.com/spalasermanacor" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+      </div>
+      <p class="mobile-menu__addr"><a href="https://maps.google.com/?q=Avinguda+d'Es+Torrent+7c+Manacor" target="_blank" rel="noopener noreferrer">Avinguda d'Es Torrent, 7c · 07500 Manacor</a></p>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ============================ HERO ============================ -->
+    <section class="hero hero--sub hero--video" aria-label="Presentación">
+      <!-- vídeo de fundo full-bleed à direita (poster = imagem; aparece enquanto o vídeo carrega ou se não houver vídeo) -->
+      <div class="hero__media">
+        <video class="hero__video" autoplay muted loop playsinline preload="auto"
+               poster="assets/images/hero-tratamiento.webp" aria-hidden="true">
+          <source src="assets/videos/hero.mp4" type="video/mp4">
+          <source src="assets/videos/hero.webm" type="video/webm">
+        </video>
+      </div>
+
+      <div class="container">
+        <div class="hero__content">
+          <span class="eyebrow hero__eyebrow" data-animate>Centro de Estética &amp; Láser · Manacor</span>
+          <h1 class="hero__title" data-animate data-animate-delay="1">Tu belleza,<br>nuestro arte</h1>
+          <p class="hero__text" data-animate data-animate-delay="2">Tratamientos no invasivos con tecnología avanzada para realzar tu belleza natural.</p>
+          <div class="hero__rating" data-animate data-animate-delay="3">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3L22 9.2l-5 4.7 1.3 6.9L12 17.6 5.7 20.8 7 13.9 2 9.2l7.1-.9z"/></svg>
+            <span class="num">5,0</span>
+            <span class="rev">· 93 reseñas en Booksy</span>
+          </div>
+          <div class="hero__actions" data-animate data-animate-delay="4">
+            <a href="https://booksy.com/es-es/38911_centro-de-estetica-laser_cuidado-de-la-piel_68645_manacor" target="_blank" rel="noopener noreferrer" class="btn btn--gold">Reservar cita</a>
+            <a href="https://wa.me/34644117081" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">
+              <span class="btn__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.01c-.24.68-1.2 1.26-1.97 1.42-.52.11-1.2.2-3.5-.75-2.94-1.22-4.83-4.2-4.98-4.39-.14-.2-1.19-1.58-1.19-3.01s.75-2.13 1.02-2.42c.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.59.82 2.03.89 2.18.07.14.12.31.02.51-.34.69-.7.66-.43 1.13.86 1.48 1.86 1.97 2.3 2.16.32.14.5.12.69-.07.19-.2.79-.92.99-1.24.2-.32.41-.27.68-.16.27.1 1.71.81 2 .96.29.14.49.22.56.34.07.12.07.71-.17 1.39z"/></svg></span>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== DIFERENCIAIS ====================== -->
+    <section class="features" aria-label="Por qué elegirnos">
+      <div class="container features__grid">
+        <div class="feature" data-animate>
+          <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l2.5 6.5L21 9l-5 4.5L17.5 21 12 17l-5.5 4L8 13.5 3 9l6.5-.5z"/></svg></span>
+          <div><h3>Tecnología avanzada</h3><p>Equipos de última generación.</p></div>
+        </div>
+        <div class="feature" data-animate data-animate-delay="1">
+          <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg></span>
+          <div><h3>Resultados visibles</h3><p>Eficacia desde las primeras sesiones.</p></div>
+        </div>
+        <div class="feature" data-animate data-animate-delay="2">
+          <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l8 3v6c0 5-3.5 8-8 11-4.5-3-8-6-8-11V5z"/></svg></span>
+          <div><h3>Seguridad y confianza</h3><p>Tratamientos no invasivos.</p></div>
+        </div>
+        <div class="feature" data-animate data-animate-delay="3">
+          <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-4.5-9-9c-1.5-3.5 1-6.5 4-6.5 2 0 3.5 1.5 5 3.5 1.5-2 3-3.5 5-3.5 3 0 5.5 3 4 6.5-2 4.5-9 9-9 9z"/></svg></span>
+          <div><h3>Atención personalizada</h3><p>Planes adaptados a ti.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== BIENVENIDA ====================== -->
+    <section class="section welcome" aria-label="Bienvenida">
+      <div class="container welcome__grid">
+        <div class="welcome__media" data-animate="fade">
+          <img src="assets/images/espacio-cabina.webp" alt="Cabina de tratamiento en SPA Laser Manacor" width="640" height="800" loading="lazy">
+        </div>
+        <div class="welcome__body">
+          <span class="eyebrow" data-animate>Bienvenida</span>
+          <h2 data-animate data-animate-delay="1">Desde 2022 cuidando<br>de tu belleza en <em>Manacor</em></h2>
+          <p data-animate data-animate-delay="2">En SPA Laser Manacor somos un centro especializado en el cuidado personal y el bienestar de nuestras clientas, resaltando la apariencia de rostro y cuerpo con tratamientos no invasivos.</p>
+          <p data-animate data-animate-delay="2">Contamos con esteticistas profesionales y tecnología de última generación para acompañarte en cada paso, en un entorno limpio, acogedor y relajante.</p>
+          <span class="welcome__hook" data-animate data-animate-delay="3">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 2l2.5 6.5L21 9l-5 4.5L17.5 21 12 17l-5.5 4L8 13.5 3 9l6.5-.5z"/></svg>
+            Diagnóstico facial y corporal <strong>&nbsp;gratis</strong>
+          </span>
+          <div data-animate data-animate-delay="4"><a href="sobre.html" class="btn btn--ghost-dark">Conócenos</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== SERVICIOS DESTACADOS ====================== -->
+    <section class="section section--sand services" aria-label="Servicios destacados">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow" data-animate>Nuestros tratamientos</span>
+          <h2 class="section-title" data-animate data-animate-delay="1">Lo mejor <em>para ti</em></h2>
+        </div>
+        <div class="services__grid">
+          <a class="service-card" href="servicios.html" data-animate>
+            <div class="service-card__media"><img src="assets/images/depilacion-laser.webp" alt="Depilación láser" loading="lazy"></div>
+            <div class="service-card__body"><h3>Depilación láser</h3><p>Piel suave y sin vello.</p><span class="service-card__price">desde <strong>20 €</strong></span></div>
+          </a>
+          <a class="service-card" href="servicios.html" data-animate data-animate-delay="1">
+            <div class="service-card__media"><img src="assets/images/limpieza-facial.webp" alt="Limpieza facial profunda" loading="lazy" style="object-position:center top"></div>
+            <div class="service-card__body"><h3>Limpieza facial</h3><p>Piel limpia y luminosa.</p><span class="service-card__price">desde <strong>60 €</strong></span></div>
+          </a>
+          <a class="service-card" href="servicios.html" data-animate data-animate-delay="2">
+            <div class="service-card__media"><img src="assets/images/dermapen-cejas.webp" alt="Dermapen con exosomas" loading="lazy"></div>
+            <div class="service-card__body"><h3>Dermapen</h3><p>Regenera y rejuvenece.</p><span class="service-card__price">desde <strong>85 €</strong></span></div>
+          </a>
+          <a class="service-card" href="servicios.html" data-animate data-animate-delay="3">
+            <div class="service-card__media"><img src="assets/images/maderoterapia.webp" alt="Maderoterapia" loading="lazy" style="object-position:center top"></div>
+            <div class="service-card__body"><h3>Maderoterapia</h3><p>Moldea y reafirma.</p><span class="service-card__price">desde <strong>50 €</strong></span></div>
+          </a>
+          <a class="service-card" href="servicios.html" data-animate data-animate-delay="4">
+            <div class="service-card__media"><img src="assets/images/hero-tratamiento.webp" alt="Bellaction Dúo corporal" loading="lazy" style="object-position:center bottom"></div>
+            <div class="service-card__body"><h3>Bellaction</h3><p>Tonifica el cuerpo.</p><span class="service-card__price">desde <strong>60 €</strong></span></div>
+          </a>
+          <a class="service-card" href="servicios.html" data-animate data-animate-delay="5">
+            <div class="service-card__media"><img src="assets/images/presoterapia.webp" alt="Presoterapia" loading="lazy" style="object-position:center bottom"></div>
+            <div class="service-card__body"><h3>Presoterapia</h3><p>Activa la circulación.</p><span class="service-card__price">desde <strong>20 €</strong></span></div>
+          </a>
+        </div>
+        <div class="text-center" data-animate><a href="servicios.html" class="btn btn--ghost-dark">Ver todos los servicios</a></div>
+      </div>
+    </section>
+
+    <!-- ====================== TRATAMIENTO DESTACADO ====================== -->
+    <section class="section featured" aria-label="Tratamiento destacado">
+      <div class="container featured__grid">
+        <div class="featured__media" data-animate="fade">
+          <img src="assets/images/depilacion-laser.webp" alt="Sesión de depilación láser" width="700" height="560" loading="lazy">
+        </div>
+        <div class="featured__body">
+          <span class="eyebrow" data-animate>Tratamiento destacado</span>
+          <h2 data-animate data-animate-delay="1">Depilación <em>láser</em> avanzada</h2>
+          <p data-animate data-animate-delay="2">La solución definitiva para decir adiós al vello. Tecnología de diodo de última generación para una depilación eficaz, segura y prácticamente indolora.</p>
+          <div class="benefits">
+            <div class="benefit" data-animate data-animate-delay="2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg> Resultados desde la primera sesión</div>
+            <div class="benefit" data-animate data-animate-delay="3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg> Apta para todo tipo de piel</div>
+            <div class="benefit" data-animate data-animate-delay="3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg> Sesiones rápidas y cómodas</div>
+            <div class="benefit" data-animate data-animate-delay="4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg> Piel suave, sin irritaciones</div>
+          </div>
+          <div data-animate data-animate-delay="4"><a href="https://booksy.com/es-es/38911_centro-de-estetica-laser_cuidado-de-la-piel_68645_manacor" target="_blank" rel="noopener noreferrer" class="btn btn--gold">Reservar cita</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== CONTADORES ====================== -->
+    <section class="stats" aria-label="Cifras">
+      <div class="container stats__grid">
+        <div class="stat" data-animate>
+          <span class="stat__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3L22 9.2l-5 4.7 1.3 6.9L12 17.6 5.7 20.8 7 13.9 2 9.2l7.1-.9z"/></svg></span>
+          <div class="stat__num"><span data-count="5" data-decimals="1">0,0</span>★</div>
+          <div class="stat__label">Valoración</div>
+        </div>
+        <div class="stat" data-animate data-animate-delay="1">
+          <span class="stat__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12a8 8 0 0 1-8 8H6l-3 3V12a8 8 0 0 1 8-8h2a8 8 0 0 1 8 8z"/></svg></span>
+          <div class="stat__num"><span data-count="93">0</span></div>
+          <div class="stat__label">Reseñas</div>
+        </div>
+        <div class="stat" data-animate data-animate-delay="2">
+          <span class="stat__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l2.5 6.5L21 10l-5 4.5L17.5 21 12 17l-5.5 4L8 14.5 3 10l6.5-.5z"/></svg></span>
+          <div class="stat__num">+<span data-count="100">0</span></div>
+          <div class="stat__label">Tratamientos</div>
+        </div>
+        <div class="stat" data-animate data-animate-delay="3">
+          <span class="stat__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg></span>
+          <div class="stat__num"><span data-count="2022">0</span></div>
+          <div class="stat__label">A tu lado desde</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== TESTIMONIOS ====================== -->
+    <section class="section testimonials" aria-label="Testimonios">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow" data-animate>Reseñas reales</span>
+          <h2 class="section-title" data-animate data-animate-delay="1">Lo que dicen <em>nuestras clientas</em></h2>
+        </div>
+        <div class="swiper" id="testimonialsSwiper" data-animate="fade">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><figure class="testimonial"><span class="testimonial__stars" aria-hidden="true">★★★★★</span><blockquote class="testimonial__quote">"Un servicio impecable, atención amable, personalizada y muy profesional."</blockquote><figcaption class="testimonial__name">Amanda <span>· Booksy</span></figcaption></figure></div>
+            <div class="swiper-slide"><figure class="testimonial"><span class="testimonial__stars" aria-hidden="true">★★★★★</span><blockquote class="testimonial__quote">"Óptima primera experiencia, la chica muy maja y el estudio muy limpio."</blockquote><figcaption class="testimonial__name">Walter <span>· Booksy</span></figcaption></figure></div>
+            <div class="swiper-slide"><figure class="testimonial"><span class="testimonial__stars" aria-hidden="true">★★★★★</span><blockquote class="testimonial__quote">"La primera vez que voy y ha estado fantástico, los productos son de mucha calidad."</blockquote><figcaption class="testimonial__name">Susana <span>· Booksy</span></figcaption></figure></div>
+            <div class="swiper-slide"><figure class="testimonial"><span class="testimonial__stars" aria-hidden="true">★★★★★</span><blockquote class="testimonial__quote">"Muy buenas profesionales. Repetiré sin duda."</blockquote><figcaption class="testimonial__name">Lilián <span>· Booksy</span></figcaption></figure></div>
+            <div class="swiper-slide"><figure class="testimonial"><span class="testimonial__stars" aria-hidden="true">★★★★★</span><blockquote class="testimonial__quote">"Servicio muy amable y profesional. El lugar, limpio y acogedor."</blockquote><figcaption class="testimonial__name">Sven <span>· Booksy</span></figcaption></figure></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <p class="testimonials__more" data-animate><a href="https://booksy.com/es-es/38911_centro-de-estetica-laser_cuidado-de-la-piel_68645_manacor" target="_blank" rel="noopener noreferrer">Ver las 93 reseñas en Booksy →</a></p>
+      </div>
+    </section>
+
+    <!-- ====================== GALERÍA (preview) ====================== -->
+    <section class="section gallery" aria-label="Galería">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow" data-animate>Galería</span>
+          <h2 class="section-title" data-animate data-animate-delay="1">Nuestro <em>espacio</em></h2>
+        </div>
+        <div class="gallery__grid">
+          <a href="galeria.html" class="gallery__item" data-animate><img src="assets/images/espacio-cabina.webp" alt="Cabina de tratamiento" loading="lazy"></a>
+          <a href="galeria.html" class="gallery__item" data-animate data-animate-delay="1"><img src="assets/images/recepcion.webp" alt="Recepción del centro" loading="lazy" style="object-position:center top"></a>
+          <a href="galeria.html" class="gallery__item" data-animate data-animate-delay="2"><img src="assets/images/masaje.webp" alt="Sesión de masaje" loading="lazy"></a>
+          <a href="galeria.html" class="gallery__item" data-animate data-animate-delay="3"><img src="assets/images/depilacion-laser.webp" alt="Depilación láser" loading="lazy"></a>
+          <a href="galeria.html" class="gallery__item" data-animate data-animate-delay="4"><img src="assets/images/dermapen-cejas.webp" alt="Diseño de cejas" loading="lazy"></a>
+          <a href="galeria.html" class="gallery__item" data-animate data-animate-delay="5"><img src="assets/images/maderoterapia.webp" alt="Maderoterapia" loading="lazy" style="object-position:center top"></a>
+        </div>
+        <div class="gallery__cta" data-animate><a href="galeria.html" class="btn btn--ghost-dark">Ver toda la galería</a></div>
+      </div>
+    </section>
+
+    <!-- ====================== CTA FINAL ====================== -->
+    <section class="section cta" aria-label="Reserva tu cita">
+      <div class="container">
+        <div class="cta-card" data-animate="fade">
+          <span class="cta-card__crown" aria-hidden="true"><img src="assets/logo/emblem-gold.svg" alt=""></span>
+          <div class="cta-card__text">
+            <span class="cta-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg></span>
+            <div>
+              <h2>Reserva tu cita hoy</h2>
+              <p>Déjanos cuidar de ti. Tu mejor versión empieza aquí.</p>
+            </div>
+          </div>
+          <div class="cta-card__actions">
+            <a href="https://booksy.com/es-es/38911_centro-de-estetica-laser_cuidado-de-la-piel_68645_manacor" target="_blank" rel="noopener noreferrer" class="btn btn--gold">Reservar cita</a>
+            <a href="https://wa.me/34644117081" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">
+              <span class="btn__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.01c-.24.68-1.2 1.26-1.97 1.42-.52.11-1.2.2-3.5-.75-2.94-1.22-4.83-4.2-4.98-4.39-.14-.2-1.19-1.58-1.19-3.01s.75-2.13 1.02-2.42c.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.59.82 2.03.89 2.18.07.14.12.31.02.51-.34.69-.7.66-.43 1.13.86 1.48 1.86 1.97 2.3 2.16.32.14.5.12.69-.07.19-.2.79-.92.99-1.24.2-.32.41-.27.68-.16.27.1 1.71.81 2 .96.29.14.49.22.56.34.07.12.07.71-.17 1.39z"/></svg></span>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer" aria-label="Pie de página">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/logo/logo-gold.svg" alt="SPA Laser Manacor" width="200" height="68">
+        <p>Centro de estética y láser en Manacor. Tratamientos no invasivos con atención personalizada.</p>
+        <div class="footer__social">
+          <a href="https://instagram.com/spalasermanacor" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="https://www.facebook.com/spalasermanacor/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h2.7l.4-3H13V9.2c0-.9.3-1.5 1.6-1.5H16V5.1c-.3 0-1.2-.1-2.3-.1-2.3 0-3.7 1.4-3.7 3.9V11H7.5v3H10v8z"/></svg></a>
+          <a href="https://wa.me/34644117081" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.01c-.24.68-1.2 1.26-1.97 1.42-.52.11-1.2.2-3.5-.75-2.94-1.22-4.83-4.2-4.98-4.39-.14-.2-1.19-1.58-1.19-3.01s.75-2.13 1.02-2.42c.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.59.82 2.03.89 2.18.07.14.12.31.02.51-.34.69-.7.66-.43 1.13.86 1.48 1.86 1.97 2.3 2.16.32.14.5.12.69-.07.19-.2.79-.92.99-1.24.2-.32.41-.27.68-.16.27.1 1.71.81 2 .96.29.14.49.22.56.34.07.12.07.71-.17 1.39z"/></svg></a>
+        </div>
+      </div>
+      <nav class="footer__col" aria-label="Navegación pie">
+        <h4>Navegación</h4>
+        <ul><li><a href="index.html">Inicio</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="sobre.html">Sobre nosotros</a></li><li><a href="galeria.html">Galería</a></li><li><a href="contacto.html">Contacto</a></li></ul>
+      </nav>
+      <div class="footer__col">
+        <h4>Servicios</h4>
+        <ul><li><a href="servicios.html">Depilación láser</a></li><li><a href="servicios.html">Limpieza facial</a></li><li><a href="servicios.html">Dermapen</a></li><li><a href="servicios.html">Maderoterapia</a></li><li><a href="servicios.html">Bellaction</a></li><li><a href="servicios.html">Presoterapia</a></li></ul>
+      </div>
+      <div class="footer__col">
+        <h4>Horario &amp; Contacto</h4>
+        <ul>
+          <li class="row"><span>Lun – Vie</span><span>09:00 – 20:00</span></li>
+          <li class="row"><span>Sáb &amp; Dom</span><span>Cerrado</span></li>
+          <li style="margin-top:1rem"><a href="https://maps.google.com/?q=Avinguda+d'Es+Torrent+7c+Manacor" target="_blank" rel="noopener noreferrer">Avinguda d'Es Torrent, 7c · Manacor</a></li>
+          <li><a href="tel:+34644117081">+34 644 11 70 81</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year">2026</span> SPA Laser Manacor<span class="sep">·</span>Todos los derechos reservados<span class="sep">·</span>Centro de Estética &amp; Láser, Manacor (Mallorca)</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/34644117081" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Escríbenos por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.01c-.24.68-1.2 1.26-1.97 1.42-.52.11-1.2.2-3.5-.75-2.94-1.22-4.83-4.2-4.98-4.39-.14-.2-1.19-1.58-1.19-3.01s.75-2.13 1.02-2.42c.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.59.82 2.03.89 2.18.07.14.12.31.02.51-.34.69-.7.66-.43 1.13.86 1.48 1.86 1.97 2.3 2.16.32.14.5.12.69-.07.19-.2.79-.92.99-1.24.2-.32.41-.27.68-.16.27.1 1.71.81 2 .96.29.14.49.22.56.34.07.12.07.71-.17 1.39z"/></svg>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
