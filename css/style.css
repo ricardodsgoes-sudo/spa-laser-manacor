@@ -103,6 +103,9 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; line-height
 .section-head .eyebrow { margin-bottom: 0.6rem; }
 .section-head p { margin-top: var(--space-sm); }
 
+/* intro da página de serviços (copy de boas-vindas, texto em tamanho "lead") */
+.svc-intro__text { font-size: var(--fs-lead); color: var(--muted); line-height: 1.85; }
+
 /* Filete dourado */
 .rule-gold { width: 60px; height: 2px; background: var(--gold); border: none; }
 .rule-gold.is-center { margin-inline: auto; }
