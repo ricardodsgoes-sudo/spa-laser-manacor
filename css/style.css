@@ -542,6 +542,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; line-height
 .svc-card__foot { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; margin-top: auto; padding-top: 0.55rem; }
 .svc-card__price { font-size: 0.72rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); }
 .svc-card__price strong { font-family: var(--font-display); font-size: 1.05rem; color: var(--gold-deep); display: block; line-height: 1; }
+.svc-card__cta { font-size: 0.74rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold-deep); }
 .svc-card__btn { flex: 0 0 auto; width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--gold); color: var(--gold-deep); display: grid; place-items: center; transition: background var(--t), color var(--t); }
 .svc-card:hover .svc-card__btn { background: var(--gold); color: var(--navy-deep); }
 .svc-card__btn svg { width: 15px; height: 15px; }
