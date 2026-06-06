@@ -248,6 +248,31 @@
   }
 
   /* ----------------------------------------------------------------
+     8b. FAQ — acordeão acessível (1 aberto por vez)
+     Alterna .is-open + aria-expanded; a altura é animada no CSS.
+     ---------------------------------------------------------------- */
+  const faq = $("[data-faq]");
+  if (faq) {
+    const items = $$(".faq__item", faq);
+    faq.addEventListener("click", (e) => {
+      const btn = e.target.closest(".faq__q");
+      if (!btn) return;
+      const item = btn.closest(".faq__item");
+      const willOpen = !item.classList.contains("is-open");
+      // fecha todos (comportamento clássico de FAQ)
+      items.forEach((it) => {
+        it.classList.remove("is-open");
+        const q = it.querySelector(".faq__q");
+        if (q) q.setAttribute("aria-expanded", "false");
+      });
+      if (willOpen) {
+        item.classList.add("is-open");
+        btn.setAttribute("aria-expanded", "true");
+      }
+    });
+  }
+
+  /* ----------------------------------------------------------------
      9. Âncoras internas com offset do header (se houver no futuro)
      ---------------------------------------------------------------- */
   $$('a[href^="#"]').forEach((link) => {
